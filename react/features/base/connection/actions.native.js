@@ -325,7 +325,7 @@ export function disconnect() {
             promise
                 = conference_.leave()
                     .catch(error => {
-                        logger.info(
+                        logger.warn(
                             'JitsiConference.leave() rejected with: ',
                             error);
 
